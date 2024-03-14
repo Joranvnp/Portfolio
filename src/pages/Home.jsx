@@ -1,14 +1,12 @@
-import { Heading } from "@radix-ui/themes";
-
-import { useThemeContext } from "@radix-ui/themes";
+import { Heading, Theme } from "@radix-ui/themes";
+import { Button } from "@radix-ui/themes";
 
 const Home = () => {
-  const currentAccentColor = useThemeContext().accentColor;
-
   return (
-    <div>
-      <Heading color={currentAccentColor}>Joran Vanpeene</Heading>
-    </div>
+    <Theme hasBackground={true}>
+      <Button variant="surface">Edit profile</Button>
+      <Heading>Joran Vanpeene</Heading>
+    </Theme>
   );
 };
 

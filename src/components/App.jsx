@@ -4,14 +4,21 @@ import { Theme } from "@radix-ui/themes";
 
 function App() {
   return (
-    <Theme
-      appearance="light"
-      accentColor="teal"
-      grayColor="sage"
-      radius="small"
-    >
-      <Home />
-    </Theme>
+    <html>
+      <body>
+        <Theme
+          hasBackground={true}
+          appearance="dark"
+          accentColor="teal"
+          grayColor="sage"
+          panelBackground="solid"
+          radius="small"
+          scaling="100%"
+        >
+          <Home />
+        </Theme>
+      </body>
+    </html>
   );
 }
 
