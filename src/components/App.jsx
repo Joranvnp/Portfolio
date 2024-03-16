@@ -1,24 +1,23 @@
 import "../styles/App.css";
 import Home from "../pages/Home";
 import { Theme } from "@radix-ui/themes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <html>
-      <body>
-        <Theme
-          hasBackground={true}
-          appearance="dark"
-          accentColor="teal"
-          grayColor="sage"
-          panelBackground="solid"
-          radius="small"
-          scaling="100%"
-        >
-          <Home />
-        </Theme>
-      </body>
-    </html>
+    <>
+      <Theme>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </Theme>
+    </> // <html>
+    //   <body>
+
+    //   </body>
+    // </html>
   );
 }
 
