@@ -128,10 +128,36 @@ table {
   border-spacing: 0;
 }
 
-/* @font-face {
-  font-family: "";
-  src: url("")
-    format("woff2");
-  font-weight: normal;
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* font: Lemon-Regular */
+@font-face {
+  font-family: "Lemon";
+  src: url("/src/assets/fonts/Lemon-Regular.woff2") format("woff2"),
+    url("Lemon-Regular.woff2") format("opentype");
   font-style: normal;
-} */
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/* font: Lemon-Bold */
+@font-face {
+  font-family: "Lemon";
+  src: url("/src/assets/fonts/Lemon-Bold.woff2") format("woff2"),
+    url("Lemon-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}

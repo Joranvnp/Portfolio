@@ -17,7 +17,9 @@ export const Presentation = () => {
       </Heading>
 
       {/* <div className={styles.content}> */}
-      <p className={styles.info}>Full Stack Developer</p>
+      <p className={styles.info}>
+        Full Stack <span>Developer</span>
+      </p>
       <img className={styles.image} src={Profile} alt={Profile} />
       <ul className={styles.contacts}>
         <li className={styles.item}>
