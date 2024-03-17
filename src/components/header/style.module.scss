@@ -8,7 +8,7 @@
 
   .background {
     background-color: var(--teal-2);
-    opacity: 0.5;
+    // opacity: 0.5;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -35,13 +35,14 @@
       left: 0;
     }
 
-    .shopContainer {
+    .lightContainer {
       display: flex;
       gap: 30px;
       position: absolute;
       right: 0;
 
-      .shop {
+      // No use
+      .light {
         display: none;
       }
     }
@@ -114,7 +115,7 @@
       font-size: 15px;
     }
 
-    .shop {
+    .light {
       display: block;
       cursor: pointer;
     }

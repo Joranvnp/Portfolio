@@ -38,7 +38,7 @@ const Header = () => {
         <motion.div
           variants={opacity}
           animate={!isActive ? "open" : "closed"}
-          className={styles.shopContainer}
+          className={styles.lightContainer}
         >
           <div className={styles.el}>
             <svg
