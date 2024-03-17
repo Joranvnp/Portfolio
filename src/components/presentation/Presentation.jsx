@@ -16,11 +16,13 @@ export const Presentation = () => {
         knowledge.
       </Heading>
 
-      {/* <div className={styles.content}> */}
-      <p className={styles.info}>
-        Full Stack <span>Developer</span>
-      </p>
-      <img className={styles.image} src={Profile} alt={Profile} />
+      <div className={styles.content}>
+        <p className={styles.info}>
+          Full Stack <span>Developer</span>
+        </p>
+        <img className={styles.image} src={Profile} alt={Profile} />
+      </div>
+
       <ul className={styles.contacts}>
         <li className={styles.item}>
           <FaLinkedin className={styles.icon} />
@@ -32,7 +34,6 @@ export const Presentation = () => {
         </li>
         <li>GitHub</li>
       </ul>
-      {/* </div> */}
     </div>
   );
 };
