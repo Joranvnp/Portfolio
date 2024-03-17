@@ -1,8 +1,51 @@
 .presentation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   // align-items: flex-start;
+  align-items: flex-start;
   padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  min-height: 90vh;
+  // padding: 0 2rem 2rem 2rem;
+  // gap: 6.4rem;
+
+  .title {
+    text-align: start;
+    font-size: 1.5rem;
+    font-weight: 400;
+    // margin-bottom: 1rem;
+    order: 1;
+  }
+
+  // .content {
+  //   order: 2;
+  // }
+
+  .info {
+    // display: flex;
+    text-align: start;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+    // margin-bottom: 1rem;
+    order: 0;
+  }
+
+  .image {
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+  }
+
+  .contacts {
+    order: 2;
+  }
 }
 
 @media only screen and (min-width: 600px) {

@@ -10,22 +10,22 @@ const links = [
   {
     title: "About",
     href: "/",
-    src: "Joran_Vanpeene.JPG",
+    src: "Joran_Vanpeene.jpg",
   },
   {
     title: "Skills",
     href: "/",
-    src: "Joran_Vanpeene.JPG",
+    src: "Joran_Vanpeene.jpg",
   },
   {
     title: "Projects",
     href: "/",
-    src: "Joran_Vanpeene.JPG",
+    src: "Joran_Vanpeene.jpg",
   },
   {
     title: "Contact",
     href: "/",
-    src: "Joran_Vanpeene.JPG",
+    src: "Joran_Vanpeene.jpg",
   },
 ];
 

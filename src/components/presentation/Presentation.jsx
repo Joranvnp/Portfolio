@@ -1,27 +1,36 @@
 import React from "react";
 import styles from "./style.module.scss";
-import { FaLinkedin } from "react-icons/fa";
 
+import Profile from "../../assets/images/Joran_Vanpeene.jpg";
+
+import { FaLinkedin } from "react-icons/fa";
 import { Heading } from "@radix-ui/themes";
 
 export const Presentation = () => {
   return (
-    <section className={styles.presentation}>
-      <Heading>Full Stack Developer</Heading>
-      <p>
-        As a student in Full Stack Web Development, I'm passionate about IT and
-        constantly on the lookout for new challenges. I like to bring my ideas
-        to life, innovate and push my limits to continually enrich my knowledge.
-      </p>
+    <div className={styles.presentation}>
+      <Heading className={styles.title}>
+        As a student in Full Stack Web Development, I&apos;m passionate about IT
+        and constantly on the lookout for new challenges. I like to bring my
+        ideas to life, innovate and push my limits to continually enrich my
+        knowledge.
+      </Heading>
 
-      <ul>
-        <li>
-          <FaLinkedin />
+      {/* <div className={styles.content}> */}
+      <p className={styles.info}>Full Stack Developer</p>
+      <img className={styles.image} src={Profile} alt={Profile} />
+      <ul className={styles.contacts}>
+        <li className={styles.item}>
+          <FaLinkedin className={styles.icon} />
           LinkedIn
         </li>
-        <li>Email</li>
+        <li>
+          {/* Import de l'icone  d'email */}
+          Email
+        </li>
         <li>GitHub</li>
       </ul>
-    </section>
+      {/* </div> */}
+    </div>
   );
 };
