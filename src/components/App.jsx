@@ -1,6 +1,6 @@
 import "../styles/App.css";
 import Home from "../pages/Home";
-// import { Theme } from "@radix-ui/themes";
+import { Theme } from "@radix-ui/themes";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,11 +13,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* </Theme> */}
-    </> // <html>
-    //   <body>
-
-    //   </body>
-    // </html>
+    </>
   );
 }
 

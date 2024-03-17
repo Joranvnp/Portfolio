@@ -1,0 +1,12 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  padding-top: 2.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .presentation {
+    padding-top: 4rem;
+  }
+}

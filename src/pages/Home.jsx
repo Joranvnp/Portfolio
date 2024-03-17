@@ -6,28 +6,23 @@ import { Presentation } from "../components/presentation/Presentation";
 
 const Home = () => {
   return (
-    <Theme
-      hasBackground={true}
-      appearance="light"
-      accentColor="teal"
-      grayColor="sage"
-      panelBackground="solid"
-      radius="small"
-      scaling="100%"
-    >
-      <Header />
-      {/* <Button variant="surface">Edit profile</Button>
-       */}
-      <Presentation />
-
-      <Presentation />
-      <Presentation />
-      <Presentation />
-      <Presentation />
-      <Presentation />
-
-      <Skill />
-    </Theme>
+    <>
+      <Theme
+        hasBackground={true}
+        appearance="light"
+        accentColor="teal"
+        grayColor="sage"
+        panelBackground="solid"
+        radius="small"
+        scaling="100%"
+      >
+        <Header />
+        {/* <Button variant="surface">Edit profile</Button>
+         */}
+        <Presentation />
+        {/* <Skill /> */}
+      </Theme>
+    </>
   );
 };
 

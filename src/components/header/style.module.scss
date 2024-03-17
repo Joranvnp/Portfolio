@@ -1,5 +1,4 @@
 .header {
-  // background-color: #f4f0ea;
   background-color: var(--teal-3);
   position: fixed;
   width: 100%;
@@ -8,7 +7,7 @@
 
   .background {
     background-color: var(--teal-2);
-    // opacity: 0.5;
+    opacity: 0.5;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -115,6 +114,7 @@
       font-size: 15px;
     }
 
+    // No use
     .light {
       display: block;
       cursor: pointer;
