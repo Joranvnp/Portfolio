@@ -1,6 +1,7 @@
 import { Heading, Theme } from "@radix-ui/themes";
 import { Button } from "@radix-ui/themes";
 import Header from "../components/header/Header";
+import { Skill } from "../components/skills/Skill";
 
 const Home = () => {
   return (
@@ -16,6 +17,8 @@ const Home = () => {
       <Header />
       {/* <Button variant="surface">Edit profile</Button>
       <Heading>Joran Vanpeene</Heading> */}
+
+      <Skill />
     </Theme>
   );
 };

@@ -11,7 +11,7 @@ export default function Image({ src, isActive }) {
       animate={isActive ? "open" : "closed"}
       className={styles.imageContainer}
     >
-      <img src={`/images/${src}`} alt="image" style={{ objectFit: "none" }} />
+      <img src={`/images/${src}`} className={styles.image} alt="image" />
     </motion.div>
   );
 }
