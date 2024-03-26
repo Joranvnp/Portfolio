@@ -144,7 +144,7 @@ body {
 
 /* font: Lemon-Regular */
 @font-face {
-  font-family: "Lemon";
+  font-family: "Lemon-Regular";
   src: url("/src/assets/fonts/Lemon-Regular.woff2") format("woff2"),
     url("Lemon-Regular.woff2") format("opentype");
   font-style: normal;
@@ -154,7 +154,7 @@ body {
 
 /* font: Lemon-Bold */
 @font-face {
-  font-family: "Lemon";
+  font-family: "Lemon-Bold";
   src: url("/src/assets/fonts/Lemon-Bold.woff2") format("woff2"),
     url("Lemon-Bold.otf") format("opentype");
   font-style: normal;
@@ -198,13 +198,10 @@ body {
 
   --success-1: var(--green-1);
   --success-2: var(--green-2);
-  /* repeat for all steps */
 
   --warning-1: var(--yellow-1);
   --warning-2: var(--yellow-2);
-  /* repeat for all steps */
 
   --danger-1: var(--red-1);
   --danger-2: var(--red-2);
-  /* repeat for all steps */
 }

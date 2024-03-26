@@ -17,6 +17,11 @@
     order: 1;
     font-family: "Switzer-Regular";
     color: var(--gray-12);
+
+    span {
+      font-family: "Switzer-Bold";
+      color: var(--accent-12);
+    }
   }
 
   .content {
