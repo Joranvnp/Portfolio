@@ -14,7 +14,10 @@ export const GsapMagnetic = ({ children }) => {
       gsap.to(ref.current, { y: y });
     };
 
-    const mouseLeave = (e) => {};
+    const mouseLeave = (e) => {
+      gsap.to(ref.current, { x: 0 });
+      gsap.to(ref.current, { y: 0 });
+    };
 
     ref.current.addEventListener("mousemove", mouseMove);
     ref.current.addEventListener("mousemove", mouseLeave);
