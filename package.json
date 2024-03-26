@@ -13,6 +13,7 @@
     "@radix-ui/colors": "^3.0.0",
     "@radix-ui/themes": "^2.0.3",
     "framer-motion": "^11.0.13",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
