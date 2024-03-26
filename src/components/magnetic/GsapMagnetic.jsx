@@ -1,5 +1,7 @@
 import gsap from "gsap";
+import { React, useRef } from "react";
 
 export const GsapMagnetic = ({ children }) => {
-  return <div>{children}</div>;
+  const ref = useRef(null);
+  return React.cloneElement(children, { ref });
 };
