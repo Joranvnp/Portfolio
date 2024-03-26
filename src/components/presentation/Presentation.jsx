@@ -9,6 +9,7 @@ import IconEmail from "/public/images/icons/icons_mail.svg";
 import IconGithub from "/public/images/icons/icons_git.svg";
 
 import { Heading } from "@radix-ui/themes";
+import { GsapMagnetic } from "../magnetic/GsapMagnetic";
 
 export const Presentation = () => {
   return (
@@ -29,7 +30,13 @@ export const Presentation = () => {
 
       <ul className={styles.contacts}>
         <li className={styles.item}>
-          <img className={styles.icon} src={IconLinkedin} alt="icon_linkedin" />
+          <GsapMagnetic>
+            <img
+              className={styles.icon}
+              src={IconLinkedin}
+              alt="icon_linkedin"
+            />
+          </GsapMagnetic>
           <p>LinkedIn</p>
         </li>
         <li>
