@@ -3,7 +3,11 @@ import styles from "./style.module.scss";
 
 import Profile from "../../assets/images/Joran_Vanpeene.jpg";
 
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin, FaMailBulk } from "react-icons/fa";
+import IconLinkedin from "/public/images/icons/links_linkedin.svg";
+import IconEmail from "/public/images/icons/icons_mail.svg";
+import IconGithub from "/public/images/icons/icons_git.svg";
+
 import { Heading } from "@radix-ui/themes";
 
 export const Presentation = () => {
@@ -25,14 +29,18 @@ export const Presentation = () => {
 
       <ul className={styles.contacts}>
         <li className={styles.item}>
-          <FaLinkedin className={styles.icon} />
-          LinkedIn
+          <img className={styles.icon} src={IconLinkedin} alt="icon_linkedin" />
+          <p>LinkedIn</p>
         </li>
         <li>
-          {/* Import de l'icone  d'email */}
-          Email
+          {/* className={styles.icon} /> Email */}
+          <img src={IconEmail} alt="icon_email" />
+          <p>Email</p>
         </li>
-        <li>GitHub</li>
+        <li>
+          <img className={styles.icon} src={IconGithub} alt="icon_github" />
+          <p>GitHub</p>
+        </li>
       </ul>
     </div>
   );
