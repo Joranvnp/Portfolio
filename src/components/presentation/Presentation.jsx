@@ -9,12 +9,12 @@ import { Heading } from "@radix-ui/themes";
 export const Presentation = () => {
   return (
     <div className={styles.presentation}>
-      <Heading className={styles.title}>
-        As a student in Full Stack Web Development, I&apos;m passionate about IT
-        and constantly on the lookout for new challenges. I like to bring my
-        ideas to life, innovate and push my limits to continually enrich my
-        knowledge.
-      </Heading>
+      <h1 className={styles.title}>
+        As a student in <span>Full Stack</span> Web Development, I&apos;m
+        passionate about IT and constantly on the lookout for
+        <span>new challenges</span>. I like to bring my ideas to life, innovate
+        and push my limits to <span>continually enrich my knowledge</span>.
+      </h1>
 
       <div className={styles.content}>
         <p className={styles.info}>

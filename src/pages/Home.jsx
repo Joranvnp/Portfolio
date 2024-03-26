@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Theme
         hasBackground={true}
-        appearance="light"
+        appearance="dark"
         accentColor="teal"
         grayColor="sage"
         panelBackground="solid"

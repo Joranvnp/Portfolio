@@ -3,3 +3,8 @@
   /* max-height: 100vh; */
   /* text-align: center; */
 }
+
+body {
+  /* Ne prend pas la font */
+  font-family: "Switzer-Regular";
+}

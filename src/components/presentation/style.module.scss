@@ -7,16 +7,16 @@
   padding-left: 5rem;
   padding-right: 5rem;
   // padding-bottom: 2rem;
-  min-height: 90vh;
+  height: 100vh;
   // padding: 0 2rem 2rem 2rem;
   // gap: 6.4rem;
 
   .title {
-    // text-align: start;
-    font-size: 3vw;
-    font-weight: 400;
+    font-size: 5vw;
     // margin-bottom: 1rem;
     order: 1;
+    font-family: "Switzer-Regular";
+    color: var(--gray-12);
   }
 
   .content {
@@ -24,7 +24,6 @@
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    // gap: auto;
   }
 
   .info {
@@ -42,7 +41,7 @@
 
     span {
       display: block;
-      color: var(--teal-11);
+      color: var(--accent-11);
     }
   }
 
@@ -51,7 +50,7 @@
     width: 25vw;
     height: 25vw;
     object-fit: cover;
-    border: 1px solid var(--teal-6);
+    border: 2px solid var(--accent-12);
   }
 
   .contacts {
