@@ -59,7 +59,24 @@
   }
 
   .contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     order: 2;
+    // padding: 50px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // padding: 50px;
+
+      svg {
+        padding: 50px;
+      }
+    }
   }
 }
 
