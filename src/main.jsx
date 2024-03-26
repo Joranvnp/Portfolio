@@ -8,7 +8,7 @@ import "./index.css";
 import "@radix-ui/themes/styles.css";
 
 // Import the theme configuration
-import "./styles/theme-config.css";
+// import "./styles/theme-config.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

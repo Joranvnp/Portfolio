@@ -13,7 +13,7 @@
 
   .title {
     // text-align: start;
-    font-size: 1.5rem;
+    font-size: 3vw;
     font-weight: 400;
     // margin-bottom: 1rem;
     order: 1;
@@ -22,34 +22,23 @@
   .content {
     display: flex;
     flex-direction: row;
-
+    align-items: flex-start;
     width: 100%;
-    gap: auto;
+    // gap: auto;
   }
 
   .info {
-    display: flex;
-    // font-family: "Lemon", sans-serif;
-
-    // font-size: 42px;
     font-family: "Lemon", Georgia;
-    // display: flex;
-    // text-align: start;
     font-size: 16vw;
     font-weight: bold;
-    // line-height: auto;
-    // height: auto;
-    align-items: center;
-    // justify-content: flex-start;
-    // margin-bottom: 1rem;
     order: 0;
     width: 100%;
-    line-height: 16vw;
+    line-height: 1;
 
-    // text-align: justify;
+    text-align: justify;
     display: block;
 
-    color: var(--teal-12);
+    color: var(--accent-12);
 
     span {
       display: block;
@@ -62,6 +51,7 @@
     width: 25vw;
     height: 25vw;
     object-fit: cover;
+    border: 1px solid var(--teal-6);
   }
 
   .contacts {
