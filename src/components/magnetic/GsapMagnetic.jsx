@@ -7,6 +7,9 @@ export const GsapMagnetic = ({ children }) => {
   useEffect(() => {
     const mouseMove = (e) => {
       const { clientX, clientY } = e;
+      const { width, height, left, top } = ref.current.getBoundingClientRect();
+      gsap.to(ref.current, { x: clientX });
+      gsap.to(ref.current, { y: clientY });
     };
 
     const mouseLeave = (e) => {};
