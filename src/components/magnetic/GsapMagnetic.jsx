@@ -8,8 +8,8 @@ export const GsapMagnetic = ({ children }) => {
     const mouseMove = (e) => {
       const { clientX, clientY } = e;
       const { width, height, left, top } = ref.current.getBoundingClientRect();
-      const x = clientX - left;
-      const y = clientY - top;
+      const x = clientX - (left + width / 2);
+      const y = clientY - (top + height / 2);
       gsap.to(ref.current, { x: x });
       gsap.to(ref.current, { y: y });
     };
