@@ -8,18 +8,20 @@ export const GsapMagnetic = ({ children }) => {
     const mouseMove = (e) => {
       const { clientX, clientY } = e;
       const { width, height, left, top } = ref.current.getBoundingClientRect();
-      gsap.to(ref.current, { x: clientX });
-      gsap.to(ref.current, { y: clientY });
+      const x = clientX - left;
+      const y = clientY - top;
+      gsap.to(ref.current, { x: x });
+      gsap.to(ref.current, { y: y });
     };
 
     const mouseLeave = (e) => {};
 
-    ref.current.addEvenListener("mousemove", mouseMove);
-    ref.current.addEvenListener("mousemove", mouseLeave);
+    ref.current.addEventListener("mousemove", mouseMove);
+    ref.current.addEventListener("mousemove", mouseLeave);
 
     return () => {
-      ref.current.addEvenListener("mousemove", mouseMove);
-      ref.current.addEvenListener("mousemove", mouseLeave);
+      ref.current.removeEventListener("mousemove", mouseMove);
+      ref.current.removeEventListener("mousemove", mouseLeave);
     };
   }, []);
   return <div ref={ref}>{children}</div>;
